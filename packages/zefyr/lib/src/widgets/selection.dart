@@ -42,8 +42,8 @@ class ZefyrSelectionOverlayState extends State<ZefyrSelectionOverlay>
 
   TextSelectionControls get controls => _controls;
 
-  final ClipboardStatusNotifier _clipboardStatus =
-      kIsWeb ? null : ClipboardStatusNotifier();
+//  final ClipboardStatusNotifier _clipboardStatus =
+//      kIsWeb ? null : ClipboardStatusNotifier();
 
   /// Global position of last TapDown event.
   Offset _lastTapDownPosition;
