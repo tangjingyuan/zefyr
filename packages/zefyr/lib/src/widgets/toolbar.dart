@@ -256,12 +256,12 @@ class ZefyrToolbarState extends State<ZefyrToolbar>
       buildButton(context, ZefyrToolbarAction.italic),
       buildButton(context, ZefyrToolbarAction.underline),
       LinkButton(),
-      HeadingButton(),
-      buildButton(context, ZefyrToolbarAction.bulletList),
-      buildButton(context, ZefyrToolbarAction.numberList),
-      buildButton(context, ZefyrToolbarAction.quote),
-      buildButton(context, ZefyrToolbarAction.code),
-      buildButton(context, ZefyrToolbarAction.horizontalRule),
+//      HeadingButton(),
+//      buildButton(context, ZefyrToolbarAction.bulletList),
+//      buildButton(context, ZefyrToolbarAction.numberList),
+//      buildButton(context, ZefyrToolbarAction.quote),
+//      buildButton(context, ZefyrToolbarAction.code),
+//      buildButton(context, ZefyrToolbarAction.horizontalRule),
       if (editor.imageDelegate != null) ImageButton(),
     ];
     return buttons;
