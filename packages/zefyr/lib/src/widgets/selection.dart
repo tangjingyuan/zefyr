@@ -81,7 +81,7 @@ class ZefyrSelectionOverlayState extends State<ZefyrSelectionOverlay>
         opacity: toolbarOpacity,
         child: _SelectionToolbar(
           selectionOverlay: this,
-          clipboardStatus: _clipboardStatus,
+//          clipboardStatus: _clipboardStatus,
         ),
       ),
     );
@@ -127,16 +127,16 @@ class ZefyrSelectionOverlayState extends State<ZefyrSelectionOverlay>
   void initState() {
     super.initState();
     _controls = widget.controls;
-    _clipboardStatus?.addListener(_onChangedClipboardStatus);
+//    _clipboardStatus?.addListener(_onChangedClipboardStatus);
   }
 
   @override
   void didUpdateWidget(ZefyrSelectionOverlay oldWidget) {
     super.didUpdateWidget(oldWidget);
     _controls = widget.controls;
-    if (pasteEnabled && _controls?.canPaste(this) == true) {
-      _clipboardStatus?.update();
-    }
+//    if (pasteEnabled && _controls?.canPaste(this) == true) {
+//      _clipboardStatus?.update();
+//    }
   }
 
   @override
@@ -172,8 +172,8 @@ class ZefyrSelectionOverlayState extends State<ZefyrSelectionOverlay>
     hideToolbar();
     _toolbarController.dispose();
     _toolbarController = null;
-    _clipboardStatus?.removeListener(_onChangedClipboardStatus);
-    _clipboardStatus?.dispose();
+//    _clipboardStatus?.removeListener(_onChangedClipboardStatus);
+//    _clipboardStatus?.dispose();
     super.dispose();
   }
 
@@ -593,11 +593,11 @@ class _SelectionToolbar extends StatefulWidget {
   const _SelectionToolbar({
     Key key,
     @required this.selectionOverlay,
-    @required this.clipboardStatus,
+//    @required this.clipboardStatus,
   }) : super(key: key);
 
   final ZefyrSelectionOverlayState selectionOverlay;
-  final ClipboardStatusNotifier clipboardStatus;
+//  final ClipboardStatusNotifier clipboardStatus;
 
   @override
   _SelectionToolbarState createState() => _SelectionToolbarState();
@@ -663,7 +663,7 @@ class _SelectionToolbarState extends State<_SelectionToolbar> {
       midpoint,
       endpoints,
       widget.selectionOverlay,
-      widget.clipboardStatus,
+//      widget.clipboardStatus,
     );
     return CompositedTransformFollower(
       link: block.layerLink,
