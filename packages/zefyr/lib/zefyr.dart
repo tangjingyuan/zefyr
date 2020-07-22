@@ -9,7 +9,7 @@ library zefyr;
 
 export 'package:notus/notus.dart';
 
-export 'src/widgets/buttons.dart' hide HeadingButton, LinkButton;
+export 'src/widgets/buttons.dart' hide HeadingButton;
 export 'src/widgets/code.dart';
 export 'src/widgets/common.dart';
 export 'src/widgets/controller.dart';
@@ -28,3 +28,4 @@ export 'src/widgets/selection.dart' hide SelectionHandleDriver;
 export 'src/widgets/theme.dart';
 export 'src/widgets/toolbar.dart';
 export 'src/widgets/view.dart';
+
