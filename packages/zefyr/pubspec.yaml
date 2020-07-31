@@ -15,7 +15,7 @@ dependencies:
   quill_delta: ^1.0.0
   notus:
     git:
-      url: git@github.com:tangjingyuan/zefyr.git
+      url: https://github.com/tangjingyuan/zefyr.git
       ref: underline
       path: packages/notus
   meta: ^1.1.0
