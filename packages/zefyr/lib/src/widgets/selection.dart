@@ -81,7 +81,7 @@ class ZefyrSelectionOverlayState extends State<ZefyrSelectionOverlay>
         opacity: toolbarOpacity,
         child: _SelectionToolbar(
           selectionOverlay: this,
-//          clipboardStatus: _clipboardStatus,
+          clipboardStatus: _clipboardStatus,
         ),
       ),
     );
@@ -593,11 +593,11 @@ class _SelectionToolbar extends StatefulWidget {
   const _SelectionToolbar({
     Key key,
     @required this.selectionOverlay,
-//    @required this.clipboardStatus,
+    @required this.clipboardStatus,
   }) : super(key: key);
 
   final ZefyrSelectionOverlayState selectionOverlay;
-//  final ClipboardStatusNotifier clipboardStatus;
+  final ClipboardStatusNotifier clipboardStatus;
 
   @override
   _SelectionToolbarState createState() => _SelectionToolbarState();
